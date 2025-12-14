@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -11,7 +14,50 @@ permissions:
   id-token: write
 
 jobs:
+  test:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Tests
+        run: |
+          echo "## Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          npm run test:unit --coverage -- --run --reporter=verbose 2>&1 | tee test-output.txt
+
+          sed 's/\x1b\[[0-9;]*m//g' test-output.txt | \
+            grep -E '(^-{3,}|^File|^All files|^ |^[A-Za-z]|Test Files|Tests|Duration|Start)' | \
+            grep -v '^$' > filtered-output.txt
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat filtered-output.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+      - name: Get short SHA
+        id: vars
+        run: echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report-${{ steps.vars.outputs.SHORT_SHA }}.zip
+          path: coverage/index.html
+          retention-days: 1
   build:
+    needs: test
+    if: |
+      always() &&
+      github.ref == 'refs/heads/main' &&
+      (needs.test.result == 'success' || needs.test.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,6 +67,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: "npm"
 
       - name: Install Dependencies
         run: npm ci
