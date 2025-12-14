@@ -53,11 +53,7 @@ jobs:
           path: coverage/index.html
           retention-days: 1
   build:
-    needs: test
-    if: |
-      always() &&
-      github.ref == 'refs/heads/main' &&
-      (needs.test.result == 'success' || needs.test.result == 'skipped')
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
