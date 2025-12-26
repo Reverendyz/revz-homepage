@@ -10,7 +10,7 @@ const theme = useTheme()
       <v-app-bar-title class="text-h6 text-sm-h5 d-none d-sm-flex"
         ><a href="/" class="text-decoration-none text-white">RevzIT</a></v-app-bar-title
       >
-      <div class="d-flex align-center flex-wrap">
+      <div class="d-flex flex-grow-1 align-center flex-wrap justify-center justify-md-end">
         <v-btn to="/" size="small" class="mx-1"> {{ $t('nav.home') }} </v-btn>
         <v-btn to="/about" size="small" class="mx-1"> {{ $t('nav.about') }} </v-btn>
         <v-btn to="/projects" size="small" class="mx-1"> {{ $t('nav.projects') }} </v-btn>

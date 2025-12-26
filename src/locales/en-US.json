@@ -40,7 +40,7 @@
       "adocli": {
         "title": "adocli",
         "subtitle": "Azure DevOps CLI — manage your Azure DevOps resources from the command line.",
-        "text": "I started this project to help myself and others manage Azure DevOps resources from the command line. It is built using Python and the Click library. It is still in early development, but it already has some basic features implemented. Feel free to check it out and contribute!"
+        "text": "I started this project to help myself and others manage Azure DevOps resources from the command line. It is built using Golang and the Click library. It is still in early development, but it already has some basic features implemented. Feel free to check it out and contribute!"
       }
     }
   },

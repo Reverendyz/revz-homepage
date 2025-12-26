@@ -40,7 +40,7 @@
       "adocli": {
         "title": "adocli",
         "subtitle": "Azure DevOps CLI — gerencie seus recursos do Azure DevOps a partir da linha de comando.",
-        "text": "Comecei este projeto para ajudar a mim mesmo e a outros a gerenciar recursos do Azure DevOps a partir da linha de comando. É construído usando Python e a biblioteca Click. Ainda está em desenvolvimento inicial, mas já possui alguns recursos básicos implementados. Sinta-se à vontade para conferir e contribuir!"
+        "text": "Comecei este projeto para ajudar a mim mesmo e a outros a gerenciar recursos do Azure DevOps a partir da linha de comando. É construído usando Golang e a biblioteca Click. Ainda está em desenvolvimento inicial, mas já possui alguns recursos básicos implementados. Sinta-se à vontade para conferir e contribuir!"
       }
     }
   },
