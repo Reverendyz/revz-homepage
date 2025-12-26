@@ -1,0 +1,67 @@
+{
+  "home": {
+    "message": {
+      "title": "Welcome to my DevSecOps Portfolio!",
+      "subtitle": "Showcasing my skills in Development, Security, and Operations."
+    },
+    "button": {
+      "github": "View my project on GitHub",
+      "about": "About me"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "theme": "Theme"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A selection of my work in DevSecOps, showcasing my skills in development, security, and operations.",
+    "button": {
+      "explore": "Explore"
+    },
+    "cards": {
+      "website": {
+        "title": "This website",
+        "subtitle": "This very website you are browsing right now! Done with Vue 3 and Vuetify 3. Pure frontend goodness.",
+        "text": "This is a testing project that I started to build my portfolio. I am trying to focus on a single framework and master it in order to build more complex projects in the future, while also improving my understanding of how to deploy and maintain web applications."
+      },
+      "dns-c": {
+        "title": "DNS-C",
+        "subtitle": "C project built to learn more about low-level programming and networking.",
+        "text": "Inspired by Daniel Hirsch, I built a DNS client from scratch using the C language. This project helped me better understand sockets, networking protocols, and low-level programming concepts."
+      },
+      "blockchain-example": {
+        "title": "blockchain-example",
+        "subtitle": "Simple blockchain implementation in Go with concurrency.",
+        "text": "Using goroutines and channels, I built a simple blockchain implementation to better understand how blockchain works under the hood. This project helped me learn more about Go’s concurrency model and data structures. It is a simple but very exciting project, and I recommend everyone to try it out."
+      },
+      "adocli": {
+        "title": "adocli",
+        "subtitle": "Azure DevOps CLI — manage your Azure DevOps resources from the command line.",
+        "text": "I started this project to help myself and others manage Azure DevOps resources from the command line. It is built using Python and the Click library. It is still in early development, but it already has some basic features implemented. Feel free to check it out and contribute!"
+      }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "content": "My name Felipe Santos A.K.A Revz, a passionate DevSecOps engineer with a strong background in software development, cybersecurity, software architecture and IT operations.",
+    "hobbies": [
+      "Programming Challenges",
+      "Drumming and music production",
+      "Hiking and outdoor adventures",
+      "Riding my bike around the city",
+      "Gym and fitness",
+      "Gaming"
+    ],
+    "revz": {
+      "title": "Why Revz?",
+      "content": "Back in 2011, when I was diving into the world of online gaming, I had a competitive team called Like A Boss - tag LaB. I didn't had a proper name to match the team tag,so I thought about my favorite band at the time, Avenged Sevenfold, and my favorite member, The Rev. Thus, I decided to go with LaB x ReverendYz as a tribute to him. Overtime, ReverendYz got shortened to Revz, and it stuck with me ever since."
+    },
+    "degrees": [
+      "Bachelor's Degree in Information Systems - FESPPR (2021)",
+      "Postgraduate in Cybersecurity - PUCPR (2025)"
+    ]
+  }
+}

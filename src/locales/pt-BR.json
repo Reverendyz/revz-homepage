@@ -1,0 +1,67 @@
+{
+  "home": {
+    "message": {
+      "title": "Bem-vindo ao meu Portfólio DevSecOps!",
+      "subtitle": "Mostrando minhas habilidades em Desenvolvimento, Segurança e Operações."
+    },
+    "button": {
+      "github": "Veja meu projeto no GitHub",
+      "about": "Sobre mim"
+    }
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "theme": "Tema"
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "subtitle": "Uma seleção do meu trabalho em DevSecOps, mostrando minhas habilidades em desenvolvimento, segurança e operações.",
+    "button": {
+      "explore": "Explorar"
+    },
+    "cards": {
+      "website": {
+        "title": "Este site",
+        "subtitle": "Este mesmo site que você está navegando agora! Feito com Vue 3 e Vuetify 3. Pura excelência em frontend.",
+        "text": "Este é um projeto de teste que comecei para construir meu portfólio. Estou tentando focar em um único framework e dominá-lo para construir projetos mais complexos no futuro, enquanto também melhoro minha compreensão de como implantar e manter aplicações web."
+      },
+      "dns-c": {
+        "title": "DNS-C",
+        "subtitle": "Projeto em C construído para aprender mais sobre programação de baixo nível e redes.",
+        "text": "Inspirado por Daniel Hirsch, construí um cliente DNS do zero usando a linguagem C. Este projeto me ajudou a entender melhor sockets, protocolos de rede e conceitos de programação de baixo nível."
+      },
+      "blockchain-example": {
+        "title": "blockchain-example",
+        "subtitle": "Implementação simples de blockchain em Go com concorrência.",
+        "text": "Usando goroutines e canais, construí uma implementação simples de blockchain para entender melhor como o blockchain funciona por trás dos panos. Este projeto me ajudou a aprender mais sobre o modelo de concorrência do Go e estruturas de dados. É um projeto simples, mas muito empolgante, e recomendo que todos experimentem."
+      },
+      "adocli": {
+        "title": "adocli",
+        "subtitle": "Azure DevOps CLI — gerencie seus recursos do Azure DevOps a partir da linha de comando.",
+        "text": "Comecei este projeto para ajudar a mim mesmo e a outros a gerenciar recursos do Azure DevOps a partir da linha de comando. É construído usando Python e a biblioteca Click. Ainda está em desenvolvimento inicial, mas já possui alguns recursos básicos implementados. Sinta-se à vontade para conferir e contribuir!"
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "content": "Meu nome é Felipe Santos, também conhecido como Revz, um engenheiro DevSecOps apaixonado com uma sólida experiência em desenvolvimento de software, cibersegurança, arquitetura de software e operações de TI.",
+    "hobbies": [
+      "Desafios de Programação",
+      "Bateria e produção musical",
+      "Caminhadas e aventuras ao ar livre",
+      "Andar de bicicleta pela cidade",
+      "Academia e fitness",
+      "Jogos"
+    ],
+    "revz": {
+      "title": "Por que Revz?",
+      "content": "Em 2011, quando eu estava mergulhando no mundo dos jogos online, eu tinha uma equipe competitiva chamada Like A Boss - tag LaB. Eu não tinha um nome adequado para combinar com a tag da equipe, então pensei na minha banda favorita na época, Avenged Sevenfold, e no meu membro favorito, The Rev. Assim, decidi usar LaB x ReverendYz como uma homenagem a ele. Com o tempo, ReverendYz foi abreviado para Revz, e ficou comigo desde então."
+    },
+    "degrees": [
+      "Bacharelado em Sistemas de Informação - FESPPR (2021)",
+      "Pós-graduação em Cibersegurança - PUCPR (2025)"
+    ]
+  }
+}
